@@ -17,7 +17,7 @@ from smtplib import SMTPResponseException,SMTPServerDisconnected,SMTPAuthenticat
 
 from .message import Message
 
-class GMail(object):
+class GMail:
 
     """
         GMail SMTP sender
@@ -154,7 +154,7 @@ def _gmail_worker(username,password,queue,debug=False):
             break
     gmail.close()
 
-class GMailWorker(object):
+class GMailWorker:
 
     """
         Background GMail SMTP sender

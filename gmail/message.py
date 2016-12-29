@@ -15,7 +15,7 @@ if sys.version_info[0] == 2:
 else:
     unicode_type = str
 
-class Message(object):
+class Message:
     """
         Wrapper around email.Message class simplifying creation of simple email
         message objects.
